@@ -25,7 +25,7 @@ it's shown.
    ```bash
    npm run dev
    ```
-4. Open [http://localhost:3000](http://localhost:3000).
+4. Open [http://localhost:3005](http://localhost:3005).
 
 If you deploy this (e.g. to Vercel), you must also add `GEMINI_API_KEY` in
 your hosting provider's **Environment Variables** settings — `.env.local` is
