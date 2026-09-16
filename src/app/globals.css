@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-slate-50 text-slate-900;
+  }
+  
+  .dark body {
+    @apply bg-slate-950 text-slate-100;
+  }
+}
+
+@layer utilities {
+  .bg-dot-grid {
+    background-image: radial-gradient(rgba(148, 163, 184, 0.22) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .dark .bg-dot-grid {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  }
+
+  .animated-dash {
+    stroke-dasharray: 6 6;
+    animation: dash 1.5s linear infinite;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+/* Doctor/Pharmacist report: when it's open, print only the report itself —
+   not the app chrome behind it. Standard "isolate one element for print"
+   pattern: hide everything, then re-reveal just the report subtree. */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #medgraph-report-overlay,
+  #medgraph-report-overlay * {
+    visibility: visible;
+  }
+  #medgraph-report-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.custom-bg-gradient {
+  background-image: 
+    radial-gradient(at 15% 10%, rgba(219, 234, 254, 0.45) 0px, transparent 50%),
+    radial-gradient(at 85% 5%, rgba(224, 231, 255, 0.35) 0px, transparent 40%),
+    radial-gradient(at 50% 95%, rgba(241, 245, 249, 0.8) 0px, transparent 60%);
+  background-attachment: fixed;
+}
+
+.dark .custom-bg-gradient {
+  background-image: 
+    radial-gradient(at 15% 10%, rgba(30, 58, 138, 0.25) 0px, transparent 50%),
+    radial-gradient(at 85% 5%, rgba(49, 46, 129, 0.2) 0px, transparent 40%),
+    radial-gradient(at 50% 95%, rgba(15, 23, 42, 0.8) 0px, transparent 60%);
+}

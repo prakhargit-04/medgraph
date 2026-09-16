@@ -1,0 +1,120 @@
+{
+  "normalize": {
+    "warfarin": {
+      "originalName": "warfarin",
+      "genericName": "warfarin"
+    },
+    "aspirin": {
+      "originalName": "aspirin",
+      "genericName": "aspirin"
+    },
+    "ibuprofen": {
+      "originalName": "ibuprofen",
+      "genericName": "ibuprofen"
+    },
+    "acetaminophen": {
+      "originalName": "acetaminophen",
+      "genericName": "acetaminophen"
+    },
+    "tylenol": {
+      "originalName": "tylenol",
+      "genericName": "acetaminophen"
+    },
+    "paracetamol": {
+      "originalName": "paracetamol",
+      "genericName": "acetaminophen"
+    },
+    "levothyroxine": {
+      "originalName": "levothyroxine",
+      "genericName": "levothyroxine"
+    },
+    "clopidogrel": {
+      "originalName": "clopidogrel",
+      "genericName": "clopidogrel"
+    }
+  },
+  "label": {
+    "warfarin": {
+      "genericName": "warfarin",
+      "found": true,
+      "sections": {
+        "boxed_warning": "WARNING: BLEEDING RISK Warfarin sodium can cause major or fatal bleeding [see Warnings and Precautions ( 5.1 )] . Perform regular monitoring of INR in all treated patients [see Dosage and Administration ( 2.1 )] . Drugs, dietary changes, and other factors affect INR levels achieved with warfarin sodium therapy [see Drug Interactions ( 7 )] . Instruct patients about prevention measures to minimize risk of bleeding and to report signs and symptoms of bleeding [see Patient Counseling Information ( 17 )] . WARNING: BLEEDING RISK See full prescribing information for complete boxed warning. Warfarin sodium can cause major or fatal bleeding. ( 5.1 ) Perform regular monitoring of INR in all treated patients. ( 2.1 ) Drugs, dietary changes, and other factors affect INR levels achieved with warfarin sodium therapy. ( 7 ) Instruct patients about prevention measures to minimize risk of bleeding and to report signs and symptoms of bleeding. ( 17 )",
+        "warnings": null,
+        "drug_interactions": "7 DRUG INTERACTIONS Concomitant use of drugs that increase bleeding risk, antibiotics, antifungals, botanical (herbal) products, and inhibitors and inducers of CYP2C9, 1A2, or 3A4. ( 7 ) Consult labeling of all concurrently used drugs for complete information about interactions with warfarin sodium or increased risks for bleeding. ( 7 ) 7.1 General Information Drugs may interact with warfarin sodium through pharmacodynamic or pharmacokinetic mechanisms. Pharmacodynamic mechanisms for drug interactions with warfarin sodium are synergism (impaired hemostasis, reduced clotting factor synthesis), competitive antagonism (vitamin K), and alteration of the physiologic control loop for vitamin K metabolism (hereditary resistance). Pharmacokinetic mechanisms for drug interactions with warfarin sodium are mainly enzyme induction, enzyme inhibition, and reduced plasma protein binding. It is important to note that some drugs may interact by more than one mechanism. More frequent INR monitoring should be performed when starting or stopping other drugs, including botanicals, or when changing dosages of other drugs, including drugs intended for short-term use (e.g., antibiotics, antifungals, corticosteroids) [ see Boxed Warning ]. Consult the labeling of all concurrently used drugs to obtain further information about interactions with warfarin sodium or adverse reactions pertaining to bleeding. 7.2 CYP450 Interactions CYP450 isozymes involved in the metabolism of warfarin include CYP2C9, 2C19, 2C8, 2C18, 1A2, and 3A4. The more potent warfarin S -enantiomer is metabolized by CYP2C9 while the R -enantiomer is metabolized by CYP1A2 and 3A4. Inhibitors of CYP2C9, 1A2, and/or 3A4 have the potential to increase the effect (increase INR) of warfarin by increasing the exposure of warfarin. Inducers of CYP2C9, 1A2, and/or 3A4 have the potential to decrease the effect (decrease INR) of warfarin by decreasing the exposure of warfarin. Examples of inhibitors and inducers of CYP2C9, 1A2, and 3A4 are below in Table 2 ; however, this list should not be considered all-inclusive. Consult the labeling of all concurrently used drugs to obtain further information about CYP450 interaction potential. The CYP450 inhibition and induction potential should be considered when starting, stopping, or changing dose of concomitant medications. Closely monitor INR if a concomitant drug is a CYP2C9, 1A2, and/or 3A4 inhibitor or inducer. Table 2: Examples of CYP450 Interactions with Warfarin Enzyme Inhibitors Inducers CYP2C9 amiodarone, capecitabine, cotrimoxazole, etravirine, fluconazole, fluvastatin, fluvoxamine, metronidazole, miconazole, oxandrolone, sulfinpyrazone, tigecycline, voriconazole, zafirlukast aprepitant, bosentan, carbamazepine, phenobarbital, rifampin CYP1A2 acyclovir, allopurinol, caffeine, cimetidine, ciprofloxacin, disulfiram, enoxacin, famotidine, fluvoxamine, methoxsalen, mexiletine, norfloxacin, oral contraceptives, phenylpropanolamine, propafenone, propranolol, terbinafine, thiabendazole, ticlopidine, verapamil, zileuton montelukast, moricizine, omeprazole, phenobarbital, phenytoin, cigarette smoking CYP3A4 alprazolam, amiodarone, amlodipine, amprenavir, aprepitant, atorvastatin, atazanavir, bicalutamide, cilostazol, cimetidine, ciprofloxacin, clarithromycin, conivaptan, cyclosporine, darunavir/ritonavir, diltiazem, erythromycin, fluconazole, fluoxetine, fluvoxamine, fosamprenavir, imatinib, indinavir, isoniazid, itraconazole, ketoconazole, lopinavir/ritonavir, nefazodone, nelfinavir, nilotinib, oral contraceptives, posaconazole, ranitidine, ranolazine, ritonavir, saquinavir, telithromycin, tipranavir, voriconazole, zileuton armodafinil, amprenavir, aprepitant, bosentan, carbamazepine, efavirenz, etravirine, modafinil, nafcillin, phenytoin, pioglitazone, prednisone, rifampin, rufinamide 7.3 Drugs that Increase Bleeding Risk Examples of drugs known to increase the risk of bleeding are presented in Table 3 . Because bleeding risk is increased when these drugs are used concomitantly with warfarin, closely monitor patients receiving any such drug with warfarin. Table 3: Drugs that Can Increase the Risk of Bleeding Drug Class Specific Drugs Anticoagulants argatroban, dabigatran, bivalirudin, desirudin, heparin, lepirudin Antiplatelet Agents aspirin, cilostazol, clopidogrel, dipyridamole, prasugrel, ticlopidine Non-steroidal Anti-Inflammatory Agents celecoxib, diclofenac, diflunisal, fenoprofen, ibuprofen, indomethacin, ketoprofen, ketorolac, mefenamic acid, naproxen, oxaprozin, piroxicam, sulindac Serotonin Reuptake Inhibitors citalopram, desvenlafaxine, duloxetine, escitalopram, fluoxetine, fluvoxamine, milnacipran, paroxetine, sertraline, venlafaxine, vilazodone 7.4 Antibiotics and Antifungals There have been reports of changes in INR in patients taking warfarin and antibiotics or antifungals, but clinical pharmacokinetic studies have not shown consistent effects of these agents on plasma concentrations of warfarin. Closely monitor INR when starting or stopping any antibiotic or antifungal in patients taking warfarin. 7.5 Botanical (Herbal) Products and Foods More frequent INR monitoring should be performed when starting or stopping botanicals. Few adequate, well-controlled studies evaluating the potential for metabolic and/or pharmacologic interactions between botanicals and warfarin sodium exist. Due to a lack of manufacturing standardization with botanical medicinal preparations, the amount of active ingredients may vary. This could further confound the ability to assess potential interactions and effects on anticoagulation. Some botanicals may cause bleeding events when taken alone (e.g., garlic and Ginkgo biloba) and may have anticoagulant, antiplatelet, and/or fibrinolytic properties. These effects would be expected to be additive to the anticoagulant effects of warfarin sodium. Conversely, some botanicals may decrease the effects of warfarin sodium (e.g., co-enzyme Q 10 , St. John\u2019s wort, ginseng). Some botanicals and foods can interact with warfarin sodium through CYP450 interactions (e.g., echinacea, grapefruit juice, ginkgo, goldenseal, St. John\u2019s wort). The amount of vitamin K in food may affect therapy with warfarin sodium. Advise patients taking warfarin sodium to eat a normal, balanced diet maintaining a consistent amount of vitamin K. Patients taking warfarin sodium should avoid drastic changes in dietary habits, such as eating large amounts of green leafy vegetables.",
+        "precautions": null
+      }
+    },
+    "aspirin": {
+      "genericName": "aspirin",
+      "found": true,
+      "sections": {
+        "boxed_warning": null,
+        "warnings": "Warnings Reye's syndrome : Children and teenagers who have or are recovering from chicken pox or flu-like symptoms should not use this product. When using this product, if changes in behavior with nausea and vomiting occur, consult a doctor because these symptoms could be an early sign of Reye's syndrome, a rare but serious illness. Allergy alert : Aspirin may cause a severe allergic reaction, which may include: hives facial swelling shock asthma (wheezing) Stomach bleeding warning: This product contains an NSAID, which may cause severe stomach bleeding. The chance is higher if you: are age 60 or older have had stomach ulcers or bleeding problems take a blood thinning (anticoagulant) or steroid drug take other drugs containing prescription or nonprescription NSAIDs [aspirin, ibuprofen, naproxen, or others] have 3 or more alcoholic drinks every day while using this product take more or for a longer time than directed Do not use if you are allergic to aspirin or any other pain reliever/fever reducer. if you have ever had an allergic reaction to his product or any of its ingredients Ask a doctor before use if stomach bleeding warning applies to you you have a history of stomach problems, such as heartburn you have high blood pressure, heart disease, liver cirrhosis, or kidney disease you are taking a diuretic you have asthma Ask a doctor or pharmacist before use if you are taking a prescription drug for gout diabetes arthritis Stop use and ask a doctor if an allergic reaction occurs. Seek medical help right away. you experience any of the following signs of stomach bleeding: feel faint vomit blood have bloody or black stool have stomach pain that does not get better pain gets worse or lasts more than 10 days redness or swelling is present ringing in the ears or loss of hearing occurs new symptoms occur These could be signs of a serious condition If pregnant or breast-feeding, ask a health professional before use. It is especially important not to use aspirin during the last 3 months of pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center (1-800-222-1222) right away.",
+        "drug_interactions": null,
+        "precautions": null
+      }
+    },
+    "ibuprofen": {
+      "genericName": "ibuprofen",
+      "found": true,
+      "sections": {
+        "boxed_warning": null,
+        "warnings": "Warnings Allergy alert: Ibuprofen may cause a severe allergic reaction, especially in people allergic to aspirin. Symptoms may include: rash facial swelling asthma (wheezing) hives skin reddening shock blisters If an allergic reaction occurs, stop use and seek medical help right away. Stomach bleeding warning: This product contains an NSAID, which may cause severe stomach bleeding. The chance is higher if you: take more or for a longer time than directed take a blood thinning (anticoagulant) or steroid drug have had stomach ulcers or bleeding problems have 3 or more alcoholic drinks every day while using this product are age 60 or older take other drugs containing prescription or nonprescription NSAIDs [aspirin, ibuprofen, naproxen, or others] Heart attack and stroke warning: NSAIDs, except aspirin, increase the risk of heart attack, heart failure, and stroke. These can be fatal. The risk is higher if you use more than directed or for longer than directed. Do not use if you have ever had an allergic reaction to any other pain reliever/fever reducer right before or after heart surgery Ask a doctor before use if stomach bleeding warning applies to you you have a history of stomach problems, such as heartburn you have high blood pressure, heart disease, liver cirrhosis, kidney disease, asthma, or had a stroke you are taking a diuretic you have problems or serious side effects from taking pain relievers or fever reducers Ask a doctor or pharmacist before use if you are under a doctor's care for any serious condition taking aspirin for heart attack or stroke, because ibuprofen may decrease this benefit of aspirin taking any other drug When using this product take with food or milk if stomach upset occurs Stop use and ask a doctor if you experience any of the following signs of stomach bleeding: feel faint have bloody or black stools vomit blood have stomach pain that does not get better you have symptoms of heart problems or stroke: chest pain slurred speech trouble breathing leg swelling weakness in one part or side of body pain gets worse or lasts more than 10 days fever gets worse or lasts more than 3 days redness or swelling is present in the painful area any new symptoms appear If pregnant or breast-feeding, ask a health professional before use. It is especially important not to use ibuprofen at 20 weeks or later in pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center right away.",
+        "drug_interactions": null,
+        "precautions": null
+      }
+    },
+    "acetaminophen": {
+      "genericName": "acetaminophen",
+      "found": true,
+      "sections": {
+        "boxed_warning": "Liver warning: This product contains acetaminophen. Severe liver damage may occur if you take more than 4000 mg of acetaminophen in 24 hours, with other drugs containing acetaminophen, or 3 or more alcoholic drinks every day while using this product.",
+        "warnings": "Allergy alert: Acetaminophen may cause severe skin reactions. Symptoms may include skin reddening, blisters, and rash. If a skin reaction occurs, stop use and seek medical help right away.",
+        "drug_interactions": null,
+        "precautions": "Ask a doctor before use if you have liver disease. Ask a doctor before use if you have 3 or more alcoholic drinks every day."
+      },
+      "meta": {
+        "manufacturerName": "Demo Labeling Co.",
+        "applicationNumber": "DEMO-ACET-001",
+        "effectiveTime": "20230601",
+        "setId": "demo-acetaminophen-set-id",
+        "brandName": "Acetaminophen"
+      }
+    },
+    "clopidogrel": {
+      "genericName": "clopidogrel",
+      "found": true,
+      "sections": {
+        "boxed_warning": "Diminished antiplatelet effect in poor metabolizers: Effectiveness depends on conversion to an active metabolite by the CYP2C19 enzyme system.",
+        "warnings": "Bleeding risk: Clopidogrel, like other antiplatelet agents, increases the risk of bleeding.",
+        "drug_interactions": null,
+        "precautions": null
+      },
+      "meta": {
+        "manufacturerName": "Demo Labeling Co.",
+        "applicationNumber": "DEMO-CLOP-001",
+        "effectiveTime": "20230601",
+        "setId": "demo-clopidogrel-set-id",
+        "brandName": "Clopidogrel"
+      }
+    }
+  },
+  "extract": {
+    "warfarin": {
+      "rawOutput": "```json\n{\n  \"drug_checked\": \"warfarin\",\n  \"relationships\": [\n    {\n      \"other_drug\": \"aspirin\",\n      \"evidence_quote\": \"Antiplatelet Agents aspirin, cilostazol, clopidogrel, dipyridamole, prasugrel, ticlopidine\",\n      \"section_context\": \"Table 3: Drugs that Can Increase the Risk of Bleeding\",\n      \"plain_language_summary\": \"Aspirin is an antiplatelet drug that can increase the risk of bleeding when taken with warfarin. Patients taking both medications should be closely monitored.\"\n    },\n    {\n      \"other_drug\": \"ibuprofen\",\n      \"evidence_quote\": \"Non-steroidal Anti-Inflammatory Agents celecoxib, diclofenac, diflunisal, fenoprofen, ibuprofen, indomethacin, ketoprofen, ketorolac, mefenamic acid, naproxen, oxaprozin, piroxicam, sulindac\",\n      \"section_context\": \"Table 3: Drugs that Can Increase the Risk of Bleeding\",\n      \"plain_language_summary\": \"Ibuprofen is a non-steroidal anti-inflammatory drug (NSAID) that can increase the risk of bleeding when used with warfarin. Patients taking both medications should be closely monitored.\"\n    }\n  ]\n}\n```"
+    },
+    "aspirin": {
+      "rawOutput": "```json\n{\n  \"drug_checked\": \"aspirin\",\n  \"relationships\": [\n    {\n      \"other_drug\": \"ibuprofen\",\n      \"evidence_quote\": \"take other drugs containing prescription or nonprescription NSAIDs [aspirin, ibuprofen, naproxen, or others]\",\n      \"section_context\": \"Stomach bleeding warning:\",\n      \"plain_language_summary\": \"Taking aspirin with other prescription or nonprescription NSAIDs such as ibuprofen increases your risk of severe stomach bleeding.\"\n    }\n  ]\n}\n```"
+    },
+    "ibuprofen": {
+      "rawOutput": "```json\n{\n  \"drug_checked\": \"ibuprofen\",\n  \"relationships\": [\n    {\n      \"other_drug\": \"aspirin\",\n      \"evidence_quote\": \"taking aspirin for heart attack or stroke, because ibuprofen may decrease this benefit of aspirin\",\n      \"section_context\": \"Ask a doctor or pharmacist before use if\",\n      \"plain_language_summary\": \"Consult a doctor or pharmacist before using ibuprofen if you take aspirin to prevent a heart attack or stroke, as ibuprofen can reduce this protective effect of aspirin.\"\n    }\n  ]\n}\n```"
+    },
+    "acetaminophen": {
+      "rawOutput": "{\"drug_checked\": \"acetaminophen\", \"relationships\": []}"
+    },
+    "clopidogrel": {
+      "simulateFailure": true,
+      "failureReason": "Simulated Gemini extraction failure for the Extraction Unavailable demo scenario."
+    }
+  }
+}
