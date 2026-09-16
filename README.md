@@ -94,7 +94,7 @@ Then start the app:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3005](http://localhost:3005).
 
 ### Demo Mode
 
