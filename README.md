@@ -1,51 +1,131 @@
 # MedGraph
 
-MedGraph turns a fragmented medication list into an evidence-grounded safety
-graph, backed by RxNorm normalization, openFDA-submitted drug labeling, and a
-Gemini extraction + backend-validation layer that verifies every quote before
-it's shown.
+> Evidence behind every medication connection.
 
-## Getting Started
+MedGraph is a Next.js medication-safety information workspace. It helps people explore potential medication relationships using RxNorm normalization, FDA-submitted drug labeling from openFDA, and evidence validation that keeps displayed quotes traceable to their source.
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. **Set up your Gemini API key** (required for live analysis; not required
-   for Demo Mode):
-   ```bash
-   cp .env.example .env.local
-   ```
-   Then open `.env.local` and paste in a key from
-   [Google AI Studio](https://aistudio.google.com/app/apikey):
-   ```
-   GEMINI_API_KEY=your_key_here
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open [http://localhost:3005](http://localhost:3005).
+> [!IMPORTANT]
+> MedGraph is an information and review tool—not a diagnosis, prescribing, or dose-calculation service. Do not start, stop, or change medication based on this app. Discuss medication questions with a pharmacist or qualified healthcare professional.
 
-If you deploy this (e.g. to Vercel), you must also add `GEMINI_API_KEY` in
-your hosting provider's **Environment Variables** settings — `.env.local` is
-gitignored and never gets deployed with your code.
+## What it does
 
-If you don't have a key handy, toggle **"Use Demo Data"** on the page — it
-replays captured, already-validated fixtures for Warfarin / Aspirin /
-Ibuprofen without calling any live API.
+| Area | Capability |
+| --- | --- |
+| Medication analysis | Normalize up to 5 medication names, retrieve available labeling, and identify evidence-backed pair relationships. |
+| Evidence review | Inspect exact quotes, relevant label section, source metadata, and verification details. |
+| Visual analysis | Explore the interaction network and a clickable interaction matrix / heatmap. |
+| Patient profile | Optionally store age, weight, pregnancy, kidney/liver conditions, allergies, and notes. Profile warnings only appear when retrieved label text is relevant. |
+| Medication routine | Create local schedules, see a daily timeline and frequency chart, enable alerts, and mark reminders as taken or missed. |
+| History & reports | Save analysis runs locally, restore them later, and export a review-ready evidence report. |
 
-## Learn More
+## How the evidence pipeline works
 
-To learn more about Next.js, take a look at the following resources:
+```mermaid
+flowchart LR
+    A[Medication names] --> B[RxNorm normalization]
+    B --> C[Retrieve FDA labeling<br/>via openFDA]
+    C --> D[Extract candidate<br/>relationships]
+    D --> E{Validate exact quote<br/>against source label}
+    E -->|Verified| F[Interaction graph + matrix<br/>+ Evidence Inspector]
+    E -->|Unavailable / incomplete| G[Clearly marked unresolved state]
+    H[Optional patient profile] --> I[Find relevant passages<br/>in retrieved label text]
+    I --> J[Patient-specific evidence marker]
+    J --> F
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Reading results responsibly
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **🔴 Potential safety signal** — relevant source evidence was found for a medication relationship.
+- **🟢 No documented signal found** — no explicit pairing was identified in the checked available label text; this is not a confirmation that a combination is safe.
+- **🟠 Patient-specific warning** — the retrieved label contains information relevant to an entered profile field. It signals review, not a medical conclusion.
+- **Gray / unavailable** — a usable source was unavailable or the evidence extraction step did not complete. This does not mean the medications are safe together.
 
-## Deploy on Vercel
+## Medication schedules and reminders
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Schedules are stored in browser `localStorage` and work independently from an analysis. Notifications are requested **only** after the user clicks **Enable notifications**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant M as MedGraph
+    participant B as Browser
+    U->>M: Create medication schedule
+    U->>M: Enable notifications
+    M->>B: Request permission + initialize alarm sound
+    B-->>M: Granted / denied / unsupported
+    Note over M: App open at scheduled time
+    M->>B: Browser notification
+    M->>U: In-app reminder + alarm sound
+    U->>M: Mark Taken or Missed
+    M->>M: Save local adherence event
+    M-->>U: Update alertness percentage
+```
+
+### Reminder limitations
+
+- Reminders run while MedGraph is open in an active browser context.
+- A fully closed browser cannot reliably produce client-only notifications; that requires a service-worker/push-notification backend.
+- Browser permission, sound playback, and notification behavior can vary by browser and device settings.
+
+## Quick start
+
+### Requirements
+
+- Node.js 20 or newer
+- npm
+- A Gemini API key for live extraction (optional when using Demo Mode)
+
+### Install and run
+
+```bash
+npm install
+cp .env.example .env.local
+```
+
+Add your key to `.env.local`:
+
+```dotenv
+GEMINI_API_KEY=your_key_here
+```
+
+Then start the app:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+### Demo Mode
+
+Enable **Use Demo Data** in the app to explore captured, validated examples without a Gemini key or live API calls. The bundled demo includes representative Warfarin, Aspirin, and Ibuprofen data.
+
+## Available commands
+
+```bash
+npm run dev     # Start the local development server
+npm run lint    # Run ESLint
+npm run build   # Create a production build
+npm run start   # Serve a production build
+```
+
+## Privacy and storage
+
+MedGraph does not require an account. The patient profile, medication schedules, reminder outcomes, and history are stored locally in the browser. Analysis requests send the selected medication names and, when provided, the optional profile fields required for that run.
+
+## Technology
+
+- Next.js + React + TypeScript
+- Tailwind CSS
+- RxNorm normalization
+- openFDA labeling retrieval
+- Gemini-assisted extraction with server-side quote validation
+- Local browser storage for history, schedules, and reminder outcomes
+
+## Deployment
+
+Deploy as a standard Next.js application. When deploying, configure `GEMINI_API_KEY` in your host's environment-variable settings. Never commit `.env.local` or API keys to the repository.
+
+---
+
+Built to make medication-label evidence easier to inspect and discuss.
